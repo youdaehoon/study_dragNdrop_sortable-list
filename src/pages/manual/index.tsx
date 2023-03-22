@@ -5,7 +5,7 @@ import s from "@/styles/Manual.module.css";
 import Card from "./component/Card";
 import icon from "@/icon";
 
-const Index: React.FC = () => {
+const Version1: React.FC = () => {
   const initdata: {
     logo: any;
     title: string;
@@ -46,4 +46,4 @@ const Index: React.FC = () => {
   );
 };
 
-export default Index;
+export default Version1;
