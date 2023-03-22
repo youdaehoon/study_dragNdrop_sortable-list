@@ -84,7 +84,7 @@ const Card: React.FC<IProps> = ({
       onDragStart={handleDragStart}
       onDragEnd={handleDragEnd}
     >
-      <img src={logo.src}></img>
+      <img src={logo&&logo.src}></img>
       <span>{title}</span>
     </article>
   );
