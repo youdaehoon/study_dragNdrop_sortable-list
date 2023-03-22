@@ -33,15 +33,39 @@
 
 .leftSlide {
   position: relative;
-  animation: slide-left 1s;
+  animation: slide-left 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.rightSlide {
+  position: relative;
+  animation: slide-right 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.overlab {
+  background-color: blue;
+}
+.grab {
+  opacity: 0;
 }
 
 @keyframes slide-left {
-  100% {
-    opacity: 0;
+  0% {
+    transform: translateX(0px);
   }
 
+  100% {
+    transform: translateX(250px);
+  }
+}
+
+@keyframes slide-right {
   0% {
-    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(-250px);
   }
 }
