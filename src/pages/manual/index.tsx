@@ -5,7 +5,7 @@ import s from "@/styles/Manual.module.css";
 import Card from "./component/Card";
 import icon from "@/icon";
 
-const index = () => {
+const index: React.FC = () => {
   const initdata: {
     logo: any;
     title: string;
